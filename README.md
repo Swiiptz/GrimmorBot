@@ -458,6 +458,6 @@ python -m rules_pipeline.main
 
 ## Licence
 
-À définir par l'auteur. Le PDF de règles dans `docs/` reste la propriété
+Tout droit à Swiiptz, merci de demander avant utilisation. Le PDF de règles dans `docs/` reste la propriété
 exclusive de la Fédération Camarilla Française et n'est pas distribué avec
 ce code.
