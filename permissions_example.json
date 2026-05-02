@@ -1,0 +1,34 @@
+{
+  "_comment": "Copie ce fichier en permissions.json et remplace les IDs par tes vrais rôles Discord. Tu peux mettre '*' dans commands pour autoriser toutes les commandes.",
+  "roles": {
+    "REMPLACE_PAR_ID_ROLE_ADMIN": {
+      "name": "Admin",
+      "commands": ["*"],
+      "daily_quota": 0,
+      "cooldown_seconds": 0
+    },
+    "REMPLACE_PAR_ID_ROLE_MEMBRE": {
+      "name": "Membre",
+      "commands": ["ask", "pfc", "archive"],
+      "daily_quota": 0,
+      "cooldown_seconds": 0,
+      "command_daily_quotas": {
+        "ask": 50
+      },
+      "command_cooldowns": {
+        "ask": 10
+      }
+    }
+  },
+  "default": {
+    "commands": ["ask", "pfc"],
+    "daily_quota": 0,
+    "cooldown_seconds": 0,
+    "command_daily_quotas": {
+      "ask": 10
+    },
+    "command_cooldowns": {
+      "ask": 30
+    }
+  }
+}

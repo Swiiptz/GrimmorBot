@@ -1,0 +1,66 @@
+# ─── Secrets et config locale ────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+permissions.json
+
+# ─── Données utilisateur (NE JAMAIS commiter) ────────────────────────────────
+# Documents sources : PDF de règles, lore, contenus sous copyright
+docs/
+!docs/.gitkeep
+
+# Bases de données
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Stockage RAG (régénérable via `python -m rag.ingest`)
+chroma_db/
+
+# Archives Discord générées par /archive ou /inactifs (peut contenir messages privés)
+archives/
+
+# Pipeline d'extraction structurée (artifacts dérivés du PDF, ~15 MB, régénérable)
+rules_pipeline/output/
+markdown/
+
+# ─── Python ──────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Environnements virtuels
+.venv/
+venv/
+env/
+ENV/
+
+# ─── Caches & logs ───────────────────────────────────────────────────────────
+*.log
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Modèles HF en cache local (si jamais)
+.cache/huggingface/
+hf_cache/
+
+# ─── IDE & OS ────────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── Claude Code session data ────────────────────────────────────────────────
+.claude/

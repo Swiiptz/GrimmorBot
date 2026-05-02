@@ -1,0 +1,17 @@
+[Unit]
+Description=Grimmor Discord Bot
+After=network.target
+
+[Service]
+Type=simple
+User=grimmor
+WorkingDirectory=/opt/grimmor
+EnvironmentFile=/opt/grimmor/.env
+ExecStart=/opt/grimmor-venv/bin/python bot.py
+Restart=on-failure
+RestartSec=10
+KillSignal=SIGTERM
+TimeoutStopSec=20
+
+[Install]
+WantedBy=multi-user.target

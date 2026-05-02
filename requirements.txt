@@ -1,0 +1,10 @@
+discord.py>=2.3.0
+google-generativeai>=0.5.0
+sentence-transformers>=2.7.0
+chromadb>=0.5.0
+rank_bm25>=0.2.2
+aiosqlite>=0.20.0
+pypdf>=4.0.0
+python-dotenv>=1.0.0
+tqdm>=4.66.0
+httpx>=0.28.0
